@@ -80,3 +80,6 @@
 #include <string>
 using namespace std;
 
+voiid addTask(vector<string>& tasks);
+void viewTasks(const vector<string>& tasks);
+void deleteTask(vector<string>& tasks);
