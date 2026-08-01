@@ -80,7 +80,7 @@
 #include <string>
 using namespace std;
 
-voiid addTask(vector<string>& tasks);
+void addTask(vector<string>& tasks);
 void viewTasks(const vector<string>& tasks);
 void deleteTask(vector<string>& tasks);
 
@@ -110,12 +110,12 @@ int main() {
                 deleteTask(tasks);
                 break;
             case 4:
-                cout << "Goodbye!" << endl;
+                cout << "Goodbye!\n" << endl;
                 break;
             default:
-                cout << "Invalid choice. Please enter a number between 1 and 4." << endl;
+                cout << "Invalid choice. Please try again.\n" << endl;
         }
-    } while (choice != 4);
+    }
 
     return 0;
 }
